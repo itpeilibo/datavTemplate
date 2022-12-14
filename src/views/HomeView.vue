@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="content bg">
+<!--  全屏容器  -->
+    <dv-full-screen-container>
+<!--   第一行   -->
+      <ModuleTitle/>
+      <!--   第二行     -->
+      <ModuleMain/>
+      <!--   第三行     -->
+      <ModuleThird />
+
+    </dv-full-screen-container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import ModuleTitle from '@/views/moduleTitle' // 第一行
+import ModuleThird from '@/views/moduleThird' // 第二行
+import ModuleMain from '@/views/moduleMain' // 第三行
 export default {
+  components: { ModuleTitle, ModuleThird, ModuleMain },
   name: 'HomeView',
-  components: {
-    HelloWorld
+  data () {
+    return {
+
+    }
   }
 }
 </script>
