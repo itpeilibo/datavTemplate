@@ -32,7 +32,7 @@
     <div style="flex: 0 1 50%;padding: 7px">
       <dv-border-box-10>
         <div class="d-flex " >
-          <dv-border-box-9 v-for="item in titleDatas" :key="item" style="height: 90px;width:210px;margin: 0 auto;margin: 15px">
+          <dv-border-box-9 v-for="item in titleDatas" :key="item.name" style="height: 90px;width:210px;margin: 0 auto;margin: 15px">
             <div class="contentText">
               <div class="left-tow">{{item.name}}</div>
               <div class="textCore">{{item.val}}</div>

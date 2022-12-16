@@ -41,7 +41,7 @@ export default {
       dataChart: [
         { name: '物料101', value: 100 },
         { name: '物料701', value: 200 },
-        { name: '物料501', value: 100 },
+        { name: '物料501', value: 101 },
         { name: '物料306', value: 120 },
         { name: '物料401', value: 167 }
       ]
